@@ -1,0 +1,22 @@
+public class ReverseString {
+    public static String reverse(String input) {
+        // Create a StringBuilder object to store the reversed string
+        StringBuilder reversed = new StringBuilder();
+        
+        // Iterate through the characters of the input string in reverse order
+        for (int i = input.length() - 1; i >= 0; i--) {
+            // Append each character to the StringBuilder object
+            reversed.append(input.charAt(i));
+        }
+        
+        // Convert the StringBuilder object to a string and return it
+        return reversed.toString();
+    }
+    
+    public static void main(String[] args) {
+        // Example usage
+        String input = "hello";
+        String reversed = reverse(input);
+        System.out.println("Reversed string: " + reversed);
+    }
+}
