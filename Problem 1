@@ -1,0 +1,12 @@
+public class Main {
+    public static int convertToSeconds(int hours) {
+        int seconds = hours * 3600; // 1 hour = 3600 seconds
+        return seconds;
+    }
+
+    public static void main(String[] args) {
+        int hours = 2; // Example input: 2 hours
+        int seconds = convertToSeconds(hours);
+        System.out.println(hours + " hours is equal to " + seconds + " seconds.");
+    }
+}
