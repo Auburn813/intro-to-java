@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+        int length = 5; // Length of the rectangle
+        int width = 3; // Width of the rectangle
+        int area = calculateRectangleArea(length, width);
+        System.out.println("The area of the rectangle is: " + area);
+    }
+
+    public static int calculateRectangleArea(int length, int width) {
+        return length * width;
+    }
+}
